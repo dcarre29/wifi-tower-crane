@@ -29,8 +29,7 @@ serverAdress = ('192.168.1.136', 8080)
 #direccion del servidor IP y puerto
 timeout =0.8
 #tiempo limite de bloqueo en el metodo recv
-                                                                                                                        #borrar al finalizar
-
+                                                                                                                     
 #variables de la parte grafica
 url = 'http://192.168.1.138/cam-hi.jpg'
 #direccion url de la camara
@@ -62,8 +61,7 @@ def electronica():
     #variables globales que se manipulan en este metodo
     #en este metodo se manipulan las consignas del joystick
 
-    while True:
-                                                                                                                                            #implementar boton de hombre muerto        
+    while True:        
         if(GPIO.input(b_accion) == True):
             #si el boton de accion está pulsado
             x = js.getAxis("x")
